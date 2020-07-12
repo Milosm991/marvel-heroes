@@ -18,13 +18,13 @@ class Info extends React.Component {
   }
   componentDidMount() {
     fetch(
-      `http://gateway.marvel.com/v1/public/characters/${this.props.match.params.id}?apikey=0dfccc7db9074a09fe2e824015d07e04`
+      `https://gateway.marvel.com/v1/public/characters/${this.props.match.params.id}?apikey=0dfccc7db9074a09fe2e824015d07e04`
     )
       .then((response) => response.json())
       .then((hero) => this.setState({ aboutHero: hero.data.results[0] }));
 
     fetch(
-      `http://gateway.marvel.com/v1/public/characters/${this.props.match.params.id}/comics?apikey=0dfccc7db9074a09fe2e824015d07e04`
+      `https://gateway.marvel.com/v1/public/characters/${this.props.match.params.id}/comics?apikey=0dfccc7db9074a09fe2e824015d07e04`
     )
       .then((response) => response.json())
       .then((comics) => this.setState({ comics: comics.data.results }));
