@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31c1db3de0c89144e32d9781a230864b",
+    "revision": "0353af1d92dfb629831f39658ea0b7b5",
     "url": "/marvel-heroes/index.html"
   },
   {
