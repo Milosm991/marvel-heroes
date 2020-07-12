@@ -5,7 +5,7 @@ const API_KEY = "0dfccc7db9074a09fe2e824015d07e04";
 class HeroService {
   static fetchAll() {
     return fetch(
-      `http://gateway.marvel.com/v1/public/characters?apikey=${API_KEY}`
+      `https://gateway.marvel.com/v1/public/characters?apikey=${API_KEY}`
     )
       .then((rawResponse) => rawResponse.json())
       .then((response) => response.data.results)
@@ -14,7 +14,7 @@ class HeroService {
 
   static search(value) {
     return fetch(
-      `http://gateway.marvel.com/v1/public/characters?nameStartsWith=${value}&apikey=${API_KEY}`
+      `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${value}&apikey=${API_KEY}`
     )
     .then(response => response.json())
     .then(response => response.data.results)
