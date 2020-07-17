@@ -18,6 +18,7 @@ class Main extends React.Component {
   }
 
   addToMyTeam = (id) => {
+   
     const heroInTeam = this.state.myTeam.find((hero) => hero.id === id);
     if (heroInTeam) {
       return;
